@@ -1,0 +1,66 @@
+/* CONTAINER */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+.container{
+
+}
+/* END CONTAINER */
+
+/* UTILITY CLASS */
+.fl{
+  float: left
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.flex{
+  display: flex;
+}
+/* END UTILITY CLASS */
+
+/* HEADER/NAVBAR */
+#header{
+  z-index: 2;
+  width: 100%;
+  height: 100px;
+}
+/* END HEADER NAVBAR */
+
+/* SIDEBAR */
+#sidebar{
+  z-index:3;
+  height: 100%;
+  width: 300px;
+}
+/* END SIDEBAR */
+
+/* MAIN */
+#main{
+  overflow-y: auto;
+  z-index: 1;
+  width: calc(100% - 300px);
+  height: 100%;
+}
+/* END MAIN */
+
+/* PLAYER */
+#player{
+  z-index: 4;
+  width: 100vw;
+  height: 100px;
+}
+/* END PLAYER */
