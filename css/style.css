@@ -1,20 +1,3 @@
-/* CONTAINER */
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  position: relative;
-}
-.container{
-
-}
-/* END CONTAINER */
-
 /* UTILITY CLASS */
 .fl{
   float: left
@@ -32,35 +15,53 @@
 }
 /* END UTILITY CLASS */
 
+/* CONTAINER */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
+.container{
+  height: calc(100% - 90px);
+  width: 100vw;
+}
+/* END CONTAINER */
+
 /* HEADER/NAVBAR */
-#header{
-  z-index: 2;
+#navbar{
   width: 100%;
-  height: 100px;
+  height: 90px;
+  background-color: #080B12;
 }
 /* END HEADER NAVBAR */
 
 /* SIDEBAR */
 #sidebar{
-  z-index:3;
   height: 100%;
-  width: 300px;
+  width: 250px;
+  background-color: #000;
 }
 /* END SIDEBAR */
 
 /* MAIN */
 #main{
   overflow-y: auto;
-  z-index: 1;
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   height: 100%;
+  background-color: #141922;
 }
 /* END MAIN */
 
 /* PLAYER */
 #player{
-  z-index: 4;
   width: 100vw;
-  height: 100px;
+  height: 90px;
+  background-color: #282828;
+  position: fixed;
 }
 /* END PLAYER */
