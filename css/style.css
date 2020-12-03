@@ -15,6 +15,18 @@
 }
 /* END UTILITY CLASS */
 
+/* LIST-LINK */
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+li a{
+  color: #ccc;
+}
+/* END LIST-LINK */
+
 /* CONTAINER */
 *{
   box-sizing: border-box;
@@ -45,7 +57,94 @@
   height: 100%;
   width: 250px;
   background-color: #000;
+  overflow-y: hidden;
 }
+ /* MY-MUSIC-LIST */
+.sidebar-content{
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ccc;
+}
+.menu-my-music{
+  flex-direction: column;
+  justify-content: space-between;
+}
+.my-music-list .logo-sidebar{
+  padding: 30px 30px;
+}
+.my-music-list .logo-sidebar img{
+  height: 40px;
+}
+.my-music-list ul li{
+  padding: 5px 15px;
+}
+.my-music-list ul li a span{
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+.my-music-list ul li a img{
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* ACTION */
+.my-music-list ul li:hover{
+  border-left: 4px solid green;
+}
+.my-music-list ul li:hover a{
+  color: #fff;
+}
+ /* END MY MUSIC LIST */
+ /* CREATE PLAYLIST */
+.create-playlist{
+  padding: 30px 15px;
+}
+.create-playlist li{
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+.create-playlist li:first-of-type{
+  color: #fff;
+  font-size: 22px;
+}
+.create-playlist li span{
+  padding-left: 15px;
+}
+.create-playlist button{
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+ /*  END CREATE PLAYLIST */
+ /* SIDEBAR FOOTER */
+.sidebar-footer li{
+ padding: 10px 15px;
+ }
+.sidebar-footer li img{
+ width: 30px;
+ vertical-align: middle;
+ margin-right: 15px;
+ }
+.sidebar-footer li:nth-child(3) img{
+ background-color: #ccc;
+ border-radius: 50%;
+ padding: 5px;
+ }
+ .sidebar-footer hr{
+   width: 200px;
+   margin: 0 auto;
+ }
+
+ .sidebar-footer li:hover span{
+  color: white;
+  font-weight: bold;
+  }
+ /* END SIDEBAR FOOTER */
+
 /* END SIDEBAR */
 
 /* MAIN */
