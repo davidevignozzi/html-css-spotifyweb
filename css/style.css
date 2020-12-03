@@ -44,14 +44,6 @@ li a{
 }
 /* END CONTAINER */
 
-/* HEADER/NAVBAR */
-#navbar{
-  width: 100%;
-  height: 90px;
-  background-color: #080B12;
-}
-/* END HEADER NAVBAR */
-
 /* SIDEBAR */
 #sidebar{
   height: 100%;
@@ -89,16 +81,8 @@ li a{
   height: 30px;
   vertical-align: middle;
 }
-
-/* ACTION */
-.my-music-list ul li:hover{
-  border-left: 4px solid green;
-}
-.my-music-list ul li:hover a{
-  color: #fff;
-}
- /* END MY MUSIC LIST */
- /* CREATE PLAYLIST */
+/* END MY MUSIC LIST */
+/* CREATE PLAYLIST */
 .create-playlist{
   padding: 30px 15px;
 }
@@ -138,14 +122,46 @@ li a{
    width: 200px;
    margin: 0 auto;
  }
-
- .sidebar-footer li:hover span{
-  color: white;
-  font-weight: bold;
-  }
- /* END SIDEBAR FOOTER */
-
+/* END SIDEBAR FOOTER */
+/* ACTION SIDEBAR*/
+.my-music-list ul li:hover{
+  border-left: 4px solid #29d078;
+}
+.my-music-list ul li:hover a{
+  color: #fff;
+}
+.create-playlist li:hover span{
+  color: #29d078;
+}
+.sidebar-footer li:hover span{
+ color: #29d078;
+ font-weight: bold;
+ }
 /* END SIDEBAR */
+
+/* HEADER/NAVBAR */
+#navbar{
+  width: 100%;
+  height: 90px;
+  background-color: #080B12;
+}
+.upgrade{
+  margin-right: 20px;
+}
+.upgrade h2{
+  color: #ccc;
+  font-size: 18px;
+  margin: 22px 0;
+  padding: 10px 40px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+/* ACTION HEADER */
+.upgrade:hover h2{
+  color: #29d078;
+  border: 2px solid #29d078;
+}
+/* END HEADER NAVBAR */
 
 /* MAIN */
 #main{
@@ -214,7 +230,7 @@ width: 320px;
 background-color: #ccc;
 display: inline-block;
 position: relative;
-bottom: 4px;
+bottom: 2px;
 margin: 0 30px;
 border-radius: 10px;
 }
