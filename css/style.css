@@ -63,5 +63,71 @@
   height: 90px;
   background-color: #282828;
   position: fixed;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.player-content-left{
+  display: flex;
+}
+.sinister-container img{
+  height: 60px;
+  margin: 15px 10px;
+}
+.song-player{
+  padding-top: 30px;
+}
+.song-player h3{
+  font-size: 16px;
+  color: #fff;
+  font-weight: bolder;
+}
+.song-player h4{
+  font-size: 12px;
+  color: #ccc;
+  font-weight: bolder;
+}
+.heart-folder{
+  padding: 40px 40px;
+  color: #ccc;
+}
+
+.center-player-buttons{
+  text-align: center;
+  padding-top: 15px;
+}
+.center-player-buttons i{
+  padding: 0px 15px;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.center-player-buttons .fa-play-circle-o{
+  font-size: 28px;
+}
+.center-player span{
+  color: #fff;
+}
+.player-line{
+content: "";
+height: 5px;
+width: 320px;
+background-color: #ccc;
+display: inline-block;
+position: relative;
+bottom: 4px;
+margin: 0 30px;
+border-radius: 10px;
+}
+
+.right-player .player-line{
+  margin-right: 20px;
+  width: 150px;
+}
+.right-player-buttons i{
+  padding: 40px 5px;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
 }
 /* END PLAYER */
