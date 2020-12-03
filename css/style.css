@@ -141,7 +141,7 @@ li a{
  }
 /* END SIDEBAR */
 
-/* HEADER/NAVBAR */
+/* HEADER */
 #navbar{
   width: 100%;
   height: 90px;
@@ -150,28 +150,21 @@ li a{
 .upgrade{
   margin-right: 20px;
 }
-.upgrade h2{
+.upgrade h3{
   color: #ccc;
-  font-size: 18px;
+  font-size: 16px;
   margin: 22px 0;
   padding: 10px 40px;
   border: 2px solid #ccc;
   border-radius: 10px;
 }
 /* ACTION HEADER */
-.upgrade:hover h2{
+.upgrade:hover h3{
   color: #29d078;
   border: 2px solid #29d078;
 }
-/* END HEADER NAVBAR */
+/* END HEADER */
 
-/* MAIN */
-#main{
-  overflow-y: auto;
-  width: calc(100% - 250px);
-  height: 100%;
-  background-color: #141922;
-}
 /* NAVBAR */
 .main-content{
   height: 40px;
@@ -187,13 +180,43 @@ li a{
   color: #ccc;
   padding: 0 15px;
 }
-/* END NAVBAR */
-
 /* ACTION */
 .main-content ul li:hover a{
   color: #29d078;
   padding-bottom: 3px;
   border-bottom: 2px solid #29d078;
+}
+/* END NAVBAR */
+
+/* MAIN */
+#main{
+  overflow-y: auto;
+  width: calc(100% - 250px);
+  height: 100%;
+  background-color: #141922;
+}
+.music h2{
+  color: #fff;
+  font-size: 26px;
+  margin-left: 30px;
+  padding-top: 40px;
+}
+.recently-played{
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  justify-content: space-around;
+}
+.recently-played img{
+  height: 200px;
+}
+.recently-played h3{
+  color: #fff;
+  padding-bottom: 10px;
+}
+.recently-played h4{
+  color: #ccc;
+  font-size: 12px;
 }
 /* END MAIN */
 
