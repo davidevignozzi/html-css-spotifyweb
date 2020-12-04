@@ -10,7 +10,6 @@
   <body>
     <div class="wrapper">
       <div class="container">
-
         <!-- sidebar -->
         <div id="sidebar" class="fl">
           <div class="sidebar-content flex">
@@ -38,6 +37,8 @@
                 </ul>
               </div>
             </div>
+
+            <!-- footer sidebar -->
             <div class="sidebar-footer">
               <ul>
                 <li><a href="#"><img src="img/download.svg" alt=""><span>Installa app</span></a></li>
@@ -45,6 +46,7 @@
                 <li><a href="#"><img src="img/profile.svg" alt=""><span>JOHN DOE</span></a></li>
               </ul>
             </div>
+            <!-- end footer sidebar -->
           </div>
         </div>
         <!-- end sidebar -->
@@ -62,6 +64,7 @@
         <!-- main -->
         <div id="main" class="fl">
           <div class="main-content">
+            <!-- navbar -->
             <nav>
               <ul>
                 <li><a href="#">IN EVIDENZA</a></li>
@@ -72,6 +75,9 @@
                 <li><a href="#">SCOPRI</a></li>
               </ul>
             </nav>
+            <!-- end navbar -->
+
+            <!-- recently played -->
             <div class="main-section">
               <h2>Recently Played</h2>
               <div class="recently-played flex">
@@ -125,6 +131,9 @@
                 </div>
               </div>
             </div>
+            <!-- end recently played -->
+
+            <!-- creato per -->
             <div class="main-section">
               <h2>Creato per John Doe</h2>
               <p>Più ascolti, più accurati saranno i suggerimenti</p>
@@ -145,6 +154,9 @@
                 </div>
               </div>
             </div>
+            <!-- end creato per -->
+
+            <!-- popular -->
             <div class="main-section">
               <h2>Artisti più popolari</h2>
               <p>Più ascolti, più assicurati saraano i suggerimenti.</p>
@@ -165,6 +177,7 @@
                 </div>
               </div>
             </div>
+            <!-- end popular -->
           </div>
         </div>
         <!-- end main -->
@@ -191,19 +204,27 @@
         <!-- center player -->
         <div class="center-player">
           <div class="center-player-buttons">
-            <i class="fa fa-random" aria-hidden="true"></i>
-            <i class="fa fa-step-backward" aria-hidden="true"></i>
-            <i class="fa fa-play-circle-o" aria-hidden="true"></i>
-            <i class="fa fa-step-forward" aria-hidden="true"></i>
-            <i class="fa fa-repeat" aria-hidden="true"></i> <br>
-          </div>
-          <div class="central-player-line">
-            <span>0.25</span>
-            <div class="player-line"></div>
-            <span>4.35</span>
+            <ul class="flex">
+              <li><i class="fa fa-random" aria-hidden="true"></i></li>
+              <li><i class="fa fa-step-backward" aria-hidden="true"></i></li>
+              <li class="big-item"><i class="fa fa-play-circle-o" aria-hidden="true"></i></li>
+              <li><i class="fa fa-step-forward" aria-hidden="true"></i></li>
+              <li><i class="fa fa-repeat" aria-hidden="true"></i> <br></li>
+            </ul>
+            <div class="central-player-line">
+              <span>0.25</span>
+              <div class="player-line">
+                <div class="elapsed-time perc-20">
+                  <div class="point"></div>
+                </div>
+              </div>
+              <span>4.35</span>
+            </div>
           </div>
         </div>
-        <!-- center player -->
+        <!-- end center player -->
+
+        <!-- right player -->
         <div class="right-player">
           <div class="right-player-buttons">
             <i class="fa fa-list" aria-hidden="true"></i>
@@ -212,8 +233,6 @@
             <div class="player-line"></div>
           </div>
         </div>
-        <!-- right player -->
-
         <!-- end right player -->
       </div>
       <!-- end player -->
