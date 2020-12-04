@@ -404,6 +404,7 @@ li a{
  }
 /* xs */
 @media (max-width: 575px) {
+
   .main-img{
     width: calc(100% / 2 - 15px);
     margin-left: 15px;
