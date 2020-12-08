@@ -13,6 +13,17 @@
 .flex{
   display: flex;
 }
+.none-lg{
+  display: none;
+}
+@media (max-width: 575px){
+  .none-xs{
+    display: none;
+  }
+  .block-xs{
+    display: block;
+  }
+}
 /* END UTILITY CLASS */
 
 /* LIST-LINK */
@@ -37,6 +48,7 @@ li a{
   width: 100vw;
   height: 100vh;
   max-width: 100%;
+  font-family: arial;
 }
 .container{
   height: calc(100% - 90px);
@@ -171,6 +183,33 @@ li a{
  .sidebar-footer ul li:hover a{
    color: white;
  }
+
+/* MEDIA QUERY SIDEBAR */
+/* xs */
+@media (max-width: 575px) {
+  #sidebar{
+    width: 60px;
+  }
+  .my-music-list .logo-sidebar img{
+    height: 35px;
+  }
+  #sidebar li a span{
+    display: none;
+  }
+  .nome-playlist{
+    display: none;
+  }
+  .my-music-list .logo-sidebar{
+    padding: 15px 15px;
+  }
+  .create-playlist button{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
 /* END SIDEBAR */
 
 /* MAIN */
@@ -193,7 +232,7 @@ li a{
   display: inline-block;
   text-align: center;
   color: #ccc;
-  padding: 0 15px;
+  padding: 5px 15px;
 }
 /* ACTION */
 .main-content ul li:hover a{
@@ -265,15 +304,47 @@ li a{
 .cover-radius{
   border-radius: 50%;
 }
-.main-img:hover .cover{
+.main-img-container:hover .cover{
   display: block;
+  cursor: pointer;
 }
 /* END MAIN ACTION */
+/* MEDIA QUERY MAIN */
+/* md */
+@media (max-width: 991px) {
+  .main-img{
+    width: calc(100% / 3 - 15px);
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+/* sm */
+@media (max-width: 767px) {
+  .main-img{
+    width: calc(100% / 2 - 15px);
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+/* xs */
+@media (max-width: 575px){
+  #main{
+    width: calc(100% - 60px);
+  }
+  .main-img{
+    width: calc(100% / 2 - 15px);
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+  }
+}
 /* END MAIN */
 
 /* PLAYER */
 #player{
-  width: 100vw;
+  width: 100%;
   height: 90px;
   background-color: #282828;
   position: fixed;
@@ -381,34 +452,109 @@ li a{
 .player-line:hover .point {
   display: block;
 }
-/* END PLAYER */
-
-/* MEDIA QUERY */
-/* md */
-@media (max-width: 991px) {
-  .main-img{
-    width: calc(100% / 3 - 15px);
-    margin-left: 15px;
-    margin-top: 15px;
-    text-align: center;
+/* MEDIA QUERY PLAYER*/
+/* lg */
+@media (max-width: 1025px){
+  .center-player span{
+    font-size: 12px;
   }
- }
- /* sm */
- @media (max-width: 767px) {
-   .main-img{
-     width: calc(100% / 2 - 15px);
-     margin-left: 15px;
-     margin-top: 15px;
-     text-align: center;
-   }
- }
-/* xs */
-@media (max-width: 575px) {
-
-  .main-img{
-    width: calc(100% / 2 - 15px);
-    margin-left: 15px;
-    margin-top: 15px;
-    text-align: center;
+  .player-line{
+    width: 200px;
+    margin: 0 8px;
+  }
+  .center-player-buttons ul li {
+    font-size: 18px;
+  }
+  .center-player-buttons ul li.big-item {
+    font-size: 30px;
+    padding: 10px 10px;
+  }
+  .heart-folder{
+    font-size: 18px;
+    padding: 40px 20px;
+  }
+  .right-player .player-line{
+    margin-right: 20px;
+    width: 90px;
+  }
+  .right-player-buttons i{
+    padding: 40px 0;
+    font-size: 16px;
   }
 }
+/* md */
+@media (max-width: 767px){
+  .center-player span{
+    font-size: 12px;
+  }
+  .player-line{
+    width: 100px;
+    margin: 0 8px;
+  }
+  .center-player-buttons ul li {
+    font-size: 16px;
+  }
+  .center-player-buttons ul li.big-item {
+    font-size: 26px;
+    padding: 10px 10px;
+  }
+  .heart-folder{
+    font-size: 18px;
+    padding: 40px 20px;
+  }
+  .right-player .player-line{
+    margin-right: 20px;
+    width: 80px;
+  }
+  .right-player-buttons i{
+    padding: 40px 0;
+    font-size: 12px;
+  }
+}
+/* xs */
+@media (max-width: 575px){
+  .sinister-container img{
+    height: 45px;
+    margin: 25px 10px;
+  }
+  .song-player h3{
+    font-size: 12px;
+  }
+  .song-player h4{
+    font-size: 8px;
+  }
+  .heart-folder{
+    font-size: 16px;
+    padding: 25px 20px;
+  }
+  .heart-folder i{
+    display: block;
+    padding-top: 5px;
+  }
+  .player-line{
+    width: 80px;
+    margin: 0 8px;
+  }
+  .center-player span{
+    font-size: 10px;
+  }
+  .center-player-buttons ul li {
+    font-size: 12px;
+  }
+  .center-player-buttons ul li.big-item {
+    font-size: 22px;
+    padding: 10px 10px;
+  }
+  .right-player .player-line{
+    margin-right: 20px;
+    width: 50px;
+  }
+  .right-player-buttons i{
+    padding: 40px 0;
+    font-size: 12px;
+  }
+}
+
+
+
+/* END PLAYER */
